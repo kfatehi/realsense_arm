@@ -1,13 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-/*
- * Hidraw Userspace Example
+/**
+ * Adapted from code by:
  *
  * Copyright (c) 2010 Alan Ott <alan@signal11.us>
  * Copyright (c) 2010 Signal 11 Software
  *
+ * Specifically, the Hidraw Userspace Example:
+ * https://github.com/torvalds/linux/blob/master/samples/hidraw/hid-example.c
+ *
  * The code may be used by anyone for any purpose,
- * and can serve as a starting point for developing
- * applications using hidraw.
  */
 
 /* Linux */
@@ -50,9 +51,9 @@
 
 int main(int argc, char **argv)
 {
-	int fd;
-	const char *device = "/dev/hidraw0";
-	fd = open(device, O_RDWR|O_NONBLOCK);
+  int fd;
+  const char *device = "/dev/hidraw0";
+  fd = open(device, O_RDWR|O_NONBLOCK);
 
   if (fd < 0) {
     perror("unable to open device");
@@ -101,13 +102,13 @@ int main(int argc, char **argv)
     auto z = pose_data.translation.z * mult;
 
 
-     // Print the x, y, z values of the translation, relative to initial position
+    // Print the x, y, z values of the translation, relative to initial position
     std::cout << "Device Position: " << std::setprecision(0) << std::fixed << x << " " <<
       y << " " << z << " (mm)\n";
 
 
     SetArmPosition(arm, x, y, z, 0);
-        
+
 
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
   }

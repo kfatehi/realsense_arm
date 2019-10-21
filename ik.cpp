@@ -1,3 +1,7 @@
+/**
+ * Adapted from code by Oleg Mazurov
+ * https://github.com/felis/USB_Host_Shield/blob/master/examples/arm_mouse.pde
+ */
 #include "ik.h"
 #include <stdio.h>
 

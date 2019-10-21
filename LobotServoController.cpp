@@ -1,11 +1,7 @@
-/******************************************************
- * FileName:      LobotServoController.cpp
- ** Company:       Lewan Soul 
- * Date:           2016/07/02  16:53
- *Last Modification Date: 201706281636
-* www.lewansoul.com
- *****************************************************/
-
+/**
+ * Adapted from code by Lewan Soul
+ * http://lewansoul.com/
+ */
 #include "LobotServoController.h"
 #include <stdio.h>
 #include <chrono>
