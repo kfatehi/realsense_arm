@@ -1,5 +1,8 @@
 # realsense_arm
 
+[![Watch the video](https://img.youtube.com/vi/qem4urOBqU/maxresdefault.jpg)](https://youtu.be/qem4urOBqU)
+
+
 Small CMake Linux program that talks to two USB devices:
 
 * Intel RealSense t265 pose tracker
